@@ -29,7 +29,7 @@ const SignUp = () => {
                 return
             
         }          
-       await fetch("https://insta-backend-bmup.onrender.com/signup",{
+       await fetch("https://insta-u529.onrender.com/signup",{
             method:"post",
             headers:{
                 "Content-Type":"Application/json"

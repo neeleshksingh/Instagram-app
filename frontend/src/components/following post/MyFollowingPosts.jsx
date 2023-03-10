@@ -26,7 +26,7 @@ export default function MyFollowingPosts() {
       navigate("/signup");
     }
     //fetching all the posts
-    fetch("https://insta-backend-bmup.onrender.com/myfollowingpost", {
+    fetch("https://insta-u529.onrender.com/myfollowingpost", {
       headers: {
         Authorization: "Bearer " + token,
       },
@@ -65,7 +65,7 @@ export default function MyFollowingPosts() {
   };
   // like post
   const likePost = (id) => {
-    fetch("https://insta-backend-bmup.onrender.com/likes", {
+    fetch("https://insta-u529.onrender.comlikes", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -90,7 +90,7 @@ export default function MyFollowingPosts() {
   };
   // unlike post
   const unlikePost = (id) => {
-    fetch("https://insta-backend-bmup.onrender.com/unlike", {
+    fetch("https://insta-u529.onrender.comunlike", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -116,7 +116,7 @@ export default function MyFollowingPosts() {
 
   // function to post comment
   const PostComment = (text, id) => {
-    fetch("https://insta-backend-bmup.onrender.com0/comment", {
+    fetch("https://insta-u529.onrender.com/comment", {
       method: "put",
       headers: {
         "Content-Type": "application/json",

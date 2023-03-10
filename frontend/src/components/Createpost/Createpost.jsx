@@ -16,7 +16,7 @@ const Createpost = () => {
   useEffect(() => {
     if (imgurl) {
       // saving imageurl and caption in mongo
-      fetch("https://insta-backend-bmup.onrender.com/createpost", {
+      fetch("https://insta-u529.onrender.com/createpost", {
         method: "post",
         headers: {
           "Content-Type": "application/json",
@@ -44,9 +44,9 @@ const Createpost = () => {
   const shareImage = () => {
     const data = new FormData();
     data.append("file", image);
-    data.append("upload_preset", "ishita-insta-clone");
-    data.append("cloud_name", "vermapreeti");
-    fetch("https://api.cloudinary.com/v1_1/vermapreeti/image/upload", {
+    data.append("upload_preset", "instagram");
+    data.append("cloud_name", "neeleshks");
+    fetch("https://api.cloudinary.com/v1_1/neeleshks/image/upload", {
       method: "post",
       body: data,
     })
@@ -86,9 +86,6 @@ const Createpost = () => {
       </div>
       <div className="details">
         <div className="card-header">
-          <div className="card-pic" style={{ display: "flex" }}>
-            <img src={require("../../img/girl.jpg")} alt="" />
-          </div>
         </div>
         <textarea
           value={caption}

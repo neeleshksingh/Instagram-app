@@ -29,7 +29,7 @@ const Profile = () => {
   };
   useEffect(() => {
     fetch(
-      `https://insta-backend-bmup.onrender.com/userProfile/${
+      `https://insta-u529.onrender.com/userProfile/${
         JSON.parse(localStorage.getItem("user"))._id
       }`,
       {

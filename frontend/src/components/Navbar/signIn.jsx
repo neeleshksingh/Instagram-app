@@ -26,7 +26,7 @@ const SignIn = () => {
       notifyA("password must be between 7 to 14 characters/ numbers.");
       return;
     }
-    await fetch("https://insta-backend-bmup.onrender.com/signin", {
+    await fetch("https://insta-u529.onrender.com/signin", {
       method: "post",
       headers: {
         "Content-Type": "Application/json",

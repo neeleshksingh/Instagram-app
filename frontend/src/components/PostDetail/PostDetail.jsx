@@ -12,7 +12,7 @@ export default function PostDetail({ commentPic, viewPostdetails }) {
   // function to delete post
   const deletePost = (postId) => {
     if (window.confirm("Do you really want to delete this post")) {
-      fetch(`https://insta-backend-bmup.onrender.com/deletePost/${postId}`, {
+      fetch(`https://insta-u529.onrender.com/deletePost/${postId}`, {
         method: "delete",
         headers: {
           Authorization: "Bearer " + localStorage.getItem("jwt"),

@@ -8,9 +8,9 @@ export default function ProfilePic({ changeProfilepic }) {
   const shareImage = () => {
     const data = new FormData();
     data.append("file", image);
-    data.append("upload_preset", "ishita-insta-clone");
-    data.append("cloud_name", "vermapreeti");
-    fetch("https://api.cloudinary.com/v1_1/vermapreeti/image/upload", {
+    data.append("upload_preset", "instagram");
+    data.append("cloud_name", "neeleshks");
+    fetch("https://api.cloudinary.com/v1_1/neeleshks/image/upload", {
       method: "post",
       body: data,
     })
@@ -31,7 +31,7 @@ export default function ProfilePic({ changeProfilepic }) {
     }
   }, [imgurl]);
   const postPic = () => {
-    fetch("https://insta-backend-bmup.onrender.com/updateProfilePic", {
+    fetch("https://insta-u529.onrender.com/updateProfilePic", {
       method: "put",
       headers: {
         "Content-Type": "application/json",

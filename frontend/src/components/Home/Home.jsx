@@ -26,7 +26,7 @@ const Home = () => {
     }
 
     //fetching all the posts
-    fetch("https://insta-backend-bmup.onrender.com/allposts", {
+    fetch("https://insta-u529.onrender.com/allposts", {
       headers: {
         Authorization: "Bearer " + token,
       },
@@ -64,7 +64,7 @@ const Home = () => {
   // like post
 
   const likePost = (id) => {
-    fetch("https://insta-backend-bmup.onrender.com/likes", {
+    fetch("https://insta-u529.onrender.com/likes", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -89,7 +89,7 @@ const Home = () => {
   };
   // unlike post
   const unlikePost = (id) => {
-    fetch("https://insta-backend-bmup.onrender.com/unlike", {
+    fetch("https://insta-u529.onrender.com/unlike", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -114,7 +114,7 @@ const Home = () => {
   };
 
   const PostComment = (text, id) => {
-    fetch("https://insta-backend-bmup.onrender.com/comment", {
+    fetch("https://insta-u529.onrender.com/comment", {
       method: "put",
       headers: {
         "Content-Type": "application/json",

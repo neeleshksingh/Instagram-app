@@ -14,7 +14,7 @@ export default function Display_Profile() {
   // follow a user
 
   const follow = (id) => {
-    fetch("https://insta-backend-bmup.onrender.com/follow", {
+    fetch("https://insta-u529.onrender.com/follow", {
       method: "put",
       headers: {
         "Content-Type": "Application/json",
@@ -32,7 +32,7 @@ export default function Display_Profile() {
   };
   // to unfollow user
   const unfollow = (id) => {
-    fetch("https://insta-backend-bmup.onrender.com/unfollow", {
+    fetch("https://insta-u529.onrender.com/unfollow", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -50,7 +50,7 @@ export default function Display_Profile() {
       });
   };
   useEffect(() => {
-    fetch(`https://insta-backend-bmup.onrender.com/userProfile/${id}`, {
+    fetch(`https://insta-u529.onrender.com/userProfile/${id}`, {
       headers: {
         Authorization: "Bearer " + localStorage.getItem("jwt"),
       },

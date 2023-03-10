@@ -1,1 +1,1 @@
-# Instagram-app
+# Instagram-Clone
